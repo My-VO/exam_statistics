@@ -19,3 +19,14 @@ def grades_average(grades_input):
   return average
 
 print("The Average : ", grades_average(grades))
+
+# The Variance
+def grades_variance(scores):
+  average = grades_average(scores)
+  variance = 0
+  for score in scores:
+    variance += (average - score) ** 2
+    
+  return variance / len(scores)
+
+print("The Variance : ", grades_variance(grades))
