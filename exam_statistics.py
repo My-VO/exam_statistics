@@ -30,3 +30,14 @@ def grades_variance(scores):
   return variance / len(scores)
 
 print("The Variance : ", grades_variance(grades))
+
+
+# Standard Deviation
+# The standard deviation is the square root of the variance. 
+# You can calculate the square root by raising the number to the one-half power.
+def grades_std_deviation(variance):
+  return variance ** 0.5
+
+variance = grades_variance(grades)
+
+print("Standard Deviation : ", grades_std_deviation(variance))
